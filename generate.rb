@@ -8,7 +8,10 @@ require 'action_view'
 include ActionView::Helpers::DateHelper
 
 slug_dates = {
-  java: Date.civil(1995, 5, 23)
+  golang: Date.civil(2009, 11, 10),
+  java: Date.civil(1995, 5, 23),
+  perl: Date.civil(1987, 12, 18),
+  ruby: Date.civil(1995, 1, 1),
 }
 
 docs = File.join(__dir__, 'docs')
