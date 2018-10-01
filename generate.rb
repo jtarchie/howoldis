@@ -24,7 +24,7 @@ slug_dates.each do |name, date|
 end
 
 File.write(File.join(docs, 'index.html'), <<~HTML)
-<html><body>#{ slug_dates.map{|n, _| "<a href='#{n}/'>#{n}</a>"}.join('<br') }</body></html>
+<html><body>#{ slug_dates.map{|n, _| "<a href='#{n}/'>#{n}</a>"}.join('<br>') }</body></html>
 HTML
 
 
