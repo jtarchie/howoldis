@@ -8,7 +8,10 @@ require 'action_view'
 include ActionView::Helpers::DateHelper
 
 slug_dates = {
+  elixir: Date.civil(2011, 1, 1),
+  erlang: Date.civil(1986, 1, 1),
   golang: Date.civil(2009, 11, 10),
+  lua: Date.civil(1993, 1, 1),
   java: Date.civil(1995, 5, 23),
   perl: Date.civil(1987, 12, 18),
   ruby: Date.civil(1995, 1, 1),
