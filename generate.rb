@@ -43,12 +43,12 @@ slug_dates.each do |name, date|
   path = File.join(docs, name.to_s)
   FileUtils.mkdir_p(path)
   File.write(File.join(path, 'index.html'), <<~HTML)
-  <html><body>#{name} is #{distance_of_time_in_words date, Time.now}</body></html>
+  <html><head><meta name="viewport" content="width=device-width, initial-scale=1"></head><body>#{name} is #{distance_of_time_in_words date, Time.now}</body></html>
   HTML
 end
 
 File.write(File.join(docs, 'index.html'), <<~HTML)
-<html><body>#{ slug_dates.map{|n, _| "<a href='#{n}/'>#{n}</a>"}.join('<br>') }</body></html>
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1"></head><body>#{ slug_dates.map{|n, _| "<a href='#{n}/'>#{n}</a>"}.join('<br>') }</body></html>
 HTML
 
 
